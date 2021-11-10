@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chuck.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Chuck Facts" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
+                    <Button x:Name="AddFact" Text="+"  HorizontalOptions="EndAndExpand" Clicked="AddFact_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <ListView x:Name="myListView" BackgroundColor="LightGray" IsVisible="True" ItemTapped="ListClickedNow">
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

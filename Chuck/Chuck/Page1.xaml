@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chuck.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name = "factEntry" Placeholder="Fact"/>
+            <Button x:Name="SaveButton" Text="Save"  HorizontalOptions="CenterAndExpand" Clicked="SaveBut"/>
+            <Button x:Name="DeleteButton" Text="Delete"  HorizontalOptions="CenterAndExpand" IsVisible="False" Clicked="DeleteFact"/>
+            <Button x:Name="CancelButton" Text="Cancel"  HorizontalOptions="CenterAndExpand" Clicked="CancelFact"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
